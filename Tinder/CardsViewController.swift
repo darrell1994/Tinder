@@ -17,7 +17,7 @@ class CardsViewController: UIViewController, UIViewControllerTransitioningDelega
         super.viewDidLoad()
         
 //        tinderDraggableView.imageView.image = UIImage(named: "ryan")
-        var gesture = UIPinchGestureRecognizer(target: self, action:#selector(CardsViewController.onPinch(_:)))
+        let gesture = UIPinchGestureRecognizer(target: self, action:#selector(CardsViewController.onPinch(_:)))
         tinderDraggableView.addGestureRecognizer(gesture)
     }
 
