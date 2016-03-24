@@ -25,21 +25,66 @@
                                 <rect key="frame" x="8" y="79" width="304" height="304"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="qjl-yl-u6h" appends="YES" id="dOw-FL-Uiu"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="tinderDraggableView" destination="MCE-Mg-Yzj" id="aFS-lt-6vf"/>
+                        <segue destination="jLB-G6-zfW" kind="modal" identifier="ToProfileViewController" id="Tty-dD-tDU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="qjl-yl-u6h">
+                    <connections>
+                        <action selector="onTapImage:" destination="BYZ-38-t0r" id="NHG-Wh-ROn"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="130.66666666666666" y="330.86000000000001"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="PpR-Wb-VWS">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="jLB-G6-zfW" customClass="ProfileViewController" customModule="Tinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tur-P8-oIa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="nav_bar2" id="qm4-oT-NWk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="via-dw-g8N" appends="YES" id="v6X-op-nPa"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ryan" id="BAU-6m-XVY">
+                                <rect key="frame" x="0.0" y="73" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxL-Ew-898" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="via-dw-g8N">
+                    <connections>
+                        <action selector="onTapNav:" destination="jLB-G6-zfW" id="le2-3P-b9g"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="512" y="330"/>
         </scene>
     </scenes>
     <resources>
         <image name="action_buttons" width="320" height="108"/>
         <image name="nav_bar" width="320" height="65"/>
+        <image name="nav_bar2" width="320" height="65"/>
+        <image name="ryan" width="449" height="514"/>
     </resources>
 </document>
