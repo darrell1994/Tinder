@@ -12,6 +12,8 @@
 		5BF868D21CA47DE9000809A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF868D01CA47DE9000809A2 /* Main.storyboard */; };
 		5BF868D41CA47DE9000809A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF868D31CA47DE9000809A2 /* Assets.xcassets */; };
 		5BF868D71CA47DE9000809A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF868D51CA47DE9000809A2 /* LaunchScreen.storyboard */; };
+		5BF868DF1CA482D1000809A2 /* DraggableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF868DE1CA482D1000809A2 /* DraggableView.xib */; };
+		5BF868E11CA48309000809A2 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF868E01CA48309000809A2 /* DraggableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		5BF868D31CA47DE9000809A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BF868D61CA47DE9000809A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BF868D81CA47DE9000809A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BF868DE1CA482D1000809A2 /* DraggableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DraggableView.xib; sourceTree = "<group>"; };
+		5BF868E01CA48309000809A2 /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				5BF868D31CA47DE9000809A2 /* Assets.xcassets */,
 				5BF868D51CA47DE9000809A2 /* LaunchScreen.storyboard */,
 				5BF868D81CA47DE9000809A2 /* Info.plist */,
+				5BF868DE1CA482D1000809A2 /* DraggableView.xib */,
+				5BF868E01CA48309000809A2 /* DraggableView.swift */,
 			);
 			path = Tinder;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			files = (
 				5BF868D71CA47DE9000809A2 /* LaunchScreen.storyboard in Resources */,
 				5BF868D41CA47DE9000809A2 /* Assets.xcassets in Resources */,
+				5BF868DF1CA482D1000809A2 /* DraggableView.xib in Resources */,
 				5BF868D21CA47DE9000809A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF868E11CA48309000809A2 /* DraggableView.swift in Sources */,
 				5BF868CF1CA47DE9000809A2 /* CardsViewController.swift in Sources */,
 				5BF868CD1CA47DE9000809A2 /* AppDelegate.swift in Sources */,
 			);

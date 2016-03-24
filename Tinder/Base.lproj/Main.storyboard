@@ -21,27 +21,19 @@
                                 <rect key="frame" x="0.0" y="460" width="320" height="108"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ryan" id="l5V-51-q97">
-                                <rect key="frame" x="8" y="73" width="304" height="304"/>
+                            <view contentMode="scaleToFill" id="MCE-Mg-Yzj" customClass="DraggableView" customModule="Tinder" customModuleProvider="target">
+                                <rect key="frame" x="8" y="79" width="304" height="304"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="MKQ-Bg-QAg" appends="YES" id="eGo-tK-wON"/>
-                                </connections>
-                            </imageView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="tinderImageView" destination="l5V-51-q97" id="U8m-Zj-mBf"/>
+                        <outlet property="tinderDraggableView" destination="MCE-Mg-Yzj" id="aFS-lt-6vf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="MKQ-Bg-QAg">
-                    <connections>
-                        <action selector="onDraggingImage:" destination="BYZ-38-t0r" id="qSQ-vt-Myo"/>
-                    </connections>
-                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="130.66666666666666" y="330.86000000000001"/>
         </scene>
@@ -49,6 +41,5 @@
     <resources>
         <image name="action_buttons" width="320" height="108"/>
         <image name="nav_bar" width="320" height="65"/>
-        <image name="ryan" width="449" height="514"/>
     </resources>
 </document>

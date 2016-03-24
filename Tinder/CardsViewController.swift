@@ -9,28 +9,17 @@
 import UIKit
 
 class CardsViewController: UIViewController {
-    @IBOutlet weak var tinderImageView: UIImageView!
+    @IBOutlet weak var tinderDraggableView: DraggableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+//        tinderDraggableView.imageView.image = UIImage(named: "ryan")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-    var originalCenter: CGPoint?
-    @IBAction func onDraggingImage(gesture: UIPanGestureRecognizer) {
-        if gesture.state == .Began {
-            originalCenter = tinderImageView.center
-        } else if gesture.state == .Changed {
-            let translation = gesture.translationInView(view)
-            tinderImageView.center = CGPoint(x: originalCenter!.x+translation.x, y: originalCenter!.y)
-        } else if gesture.state == .Ended {
-            
-        }
     }
 }
 
